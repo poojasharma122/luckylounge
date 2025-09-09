@@ -247,7 +247,7 @@ img {
     color: #fff;
     font-size: 3rem;
     letter-spacing: 0.3px;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 span.theme {
@@ -602,7 +602,6 @@ body .slick-track {
     transition: transform 0.3s ease;
   }
   
-  /* Overlay */
   .game_card::before {
     content: '';
     position: absolute;
@@ -647,6 +646,86 @@ body .slick-track {
   }
 /* Home Slider CSS End */
 
+
+/* Home Cards CSS Start */
+.home_featured_card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: 1.875rem;
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+    height: 100%;
+    padding: 1.25rem;
+    background-color: #000;
+}
+
+.home_featured_img_outer {
+    height: 25rem;
+    width: 100%;
+}
+
+.home_featured_img {
+    height: 100%;
+    width: 100%;
+}
+
+.home_featured_card h5 {
+    padding: 1rem;
+    text-align: center;
+    color: #fcee0a;
+    line-height: 1.3;
+    font-weight: 500;
+    width: 100%;
+    font-size: 1.1rem;
+    min-height: 5rem;
+}
+
+.common_overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.common_overlay .box {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: rgba(252 238 10/0.2);
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+
+.common_overlay .box1 {
+    top: 0;
+    left: 0;
+    transform: translate(-100%, -100%);
+}
+
+.common_overlay .box2 {
+    top: 0;
+    right: 0;
+    transform: translate(100%, -100%);
+}
+
+
+.common_overlay .box3 {
+    bottom: 0;
+    left: 0;
+    transform: translate(-100%, 100%);
+}
+
+.common_overlay .box4 {
+    bottom: 0;
+    right: 0;
+    transform: translate(100%, 100%);
+}
+
+.common_overlay:hover .box {
+    transform: translate(0, 0);
+}
+/* Home Cards CSS End */
 
 
 
