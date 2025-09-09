@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
 /* Global CSS Start */
 html {
     font-size: 16px;
@@ -18,7 +20,7 @@ html {
 }
 
 body {
-font-family: "Inter", sans-serif;
+  font-family: "Oxanium", sans-serif;
     padding: 0;
     margin: 0;
     word-break: break-word;
@@ -31,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Oxanium", sans-serif;
     margin: 0;
     line-height: 1;
     font-weight: 400;
@@ -42,7 +44,7 @@ p {
     line-height: 1.6;
     padding: 0;
     margin: 0;
-font-family: "Inter", sans-serif;
+  font-family: "Oxanium", sans-serif;
     letter-spacing: 1px;
     color: #fff;
 }
@@ -61,17 +63,17 @@ ul li {
 a {
     display: inline-block;
     text-decoration: none;
-font-family: "Inter", sans-serif;
+  font-family: "Oxanium", sans-serif;
 }
 
 button,
 textarea,
 input {
-font-family: "Inter", sans-serif;
+  font-family: "Oxanium", sans-serif;
 }
 
 input {
-font-family: "Inter", sans-serif;
+  font-family: "Oxanium", sans-serif;
 }
 
 img {
@@ -474,13 +476,14 @@ span.theme {
 }
 
 .banner_content h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #fff;
     line-height: 1.4;
     max-width: 50.625rem;
     letter-spacing: 0.5px;
     text-transform: capitalize;
     position: relative;
+    font-weight: 600;
 }
 
 
