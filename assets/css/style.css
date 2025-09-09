@@ -1047,6 +1047,9 @@ body .slick-track {
 .disclaimer{
     border-top: 1px solid rgb(252 238 1/50%);
 }
+.disclaimer p a{
+    color: #fcee0a;
+}
 /* footer end  */
 
 
