@@ -790,7 +790,45 @@ body .slick-track {
     line-height: 1.5;
     color: #fff;
 }
-
+@keyframes bounce-move {
+    0% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(-10px, -10px);
+    }
+    20% {
+        transform: translate(-15px, 10px);
+    }
+    30% {
+        transform: translate(10px, 15px);
+    }
+    40% {
+        transform: translate(15px, -10px);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    60% {
+        transform: translate(10px, 10px);
+    }
+    70% {
+        transform: translate(-10px, 15px);
+    }
+    80% {
+        transform: translate(-15px, -10px);
+    }
+    90% {
+        transform: translate(10px, -15px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+.bouncing_img {
+    animation: bounce-move 10s infinite linear;
+    filter: drop-shadow(0 4px 24px rgba(252,238,10,0.45));
+}
 /* Image Text CSS End */
 
 /* Newsletter CSS Start */
