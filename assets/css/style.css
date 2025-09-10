@@ -395,8 +395,36 @@ span.theme {
     gap: 10px;
 }
 
-.sidebar a {
+.sidebar ul li a {
     color: #fcee0a;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.sidebar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 5px;
+    height: 1.5px;
+    bottom: -5PX;
+    left: 0;
+    right: 0;
+    background-color: #fcee0a;
+    transform-origin: center;
+    transition: all 0.3s ease-out;
+}
+
+
+.sidebar ul li a.active::after {
+    transform: scaleX(0.9);
+    background-color: #fff;
+    transform-origin: center;
+}
+
+.sidebar ul li a:hover::after {
+    transform: scaleX(0.9);
 }
 
 
@@ -428,15 +456,12 @@ span.theme {
     transition: background 0.2s;
 }
 
-.sidebar li:hover {
-    background: #333;
-}
-
-
 .header-bottom {
     display: none;
 }
-
+.header-bottom .header_inner {
+    padding: 0.9375rem 1.25rem 1.875rem 1.25rem;
+}
 .menu-btn {
     background: none;
     border: none;
@@ -732,97 +757,138 @@ body .slick-track {
 /* Home Cards CSS End */
 
 
-
-
-
-
-
-
-/* Home Latest CSS Start */
-.home_latest_sub {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.home_latest_event .slick-list.draggable {
-    height: 43.75rem;
-}
-
-.home_latest_event .slick-track {
-    height: 100%;
-}
-
-.home_latest_event .latest_slides {
-    height: 100%;
+/* Image Text CSS Start */
+.behind_bar_inner {
+    max-width: 68.75rem;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    padding: 0 0 3.125rem 0;
-    background-color: rgba(0 0 0/40%);
+}
+
+.image_txt_img_outer {
+    height: 25rem;
+    width: 100%;
+    border-radius: 1.875rem;
+}
+
+.image_txt_img {
+    width: 100%;
+    height: 100%;
+}
+
+.img_txt_content {
+    height: 100%;
+    padding: 5rem 2rem;
+}
+
+.img_txt_content h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.img_txt_content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* Image Text CSS End */
+
+/* Newsletter CSS Start */
+.newsletter-section .row {
+    max-width: 43rem;
+}
+.newsletter-section {
+    background-color: rgba(0 0 0/80%);
     background-blend-mode: multiply;
 }
 
-.latest_slides h2 {
-    background-color: rgba(0 0 0/70%);
-    padding: 1.25rem;
-    border-radius: 3.125rem;
-    color: #ffc723;
-    font-size: 2rem;
+.newsletter-wrap input {
+    width: 80%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 0.6235rem;
+    color: #fff;
 }
 
-.home_latest_event .slick-prev:before,
-.home_latest_event .slick-next:before {
-    display: none;
-}
-
-
-.home_latest_event .slide_content {
-    text-align: center;
-    padding: 0 0.9375rem;
-}
-
-.home_latest_event .slick-prev:before,
-.home_latest_event .slick-next:before {
-    font-size: 2.1875rem;
+.newsletter-wrap input::placeholder {
+    color: #fff;
     opacity: 1;
 }
 
-.home_latest_event .slick-prev {
-    left: 0;
-    z-index: 1;
+.newsletter-wrap input:focus::placeholder {
+    color: #fcee0a;
 }
 
-.home_latest_event .slick-next {
-    right: 0;
-    z-index: 1;
+.newsletter-wrap input:focus {
+    border-bottom: 1px solid #fcee0a;
 }
 
-.home_latest_event .slick-arrow {
-    width: auto !important;
-    height: auto !important;
+.newsletter-wrap input::-ms-input-placeholder {
+    color: #fff;
 }
 
-.home_latest_event .slick-prev svg,
-.home_latest_event .slick-next svg {
-    width: 5rem;
-    height: 5rem;
-    fill: #ffc723;
-    opacity: 0.5;
-    transition: all 0.3s ease;
+.newsletter-wrap p {
+    color: #fff;
+    font-size: 1.2rem;
 }
 
-.home_latest_event .slick-prev:hover svg,
-.home_latest_event .slick-next:hover svg {
-    opacity: 1;
-    transform: scale(1.05);
+.newsletter-wrap h3 {
+    line-height: 1.3;
 }
 
-/* Home Latest CSS Start */
+/* Newsletter CSS End */
+
+/* FAQ CSS Start */
+.accordion-button, .accordion-button:not(.collapsed) {
+    background: #000;
+    color: #fcee0a;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+}
+.accordion-item {
+    border: none;
+    margin-bottom: 0.9375rem;
+}
+.accordion-body p {
+    color: #151515;
+    font-weight: 600;
+}
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}
+
+.faq_img_outer {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.faq_img {
+    height: 100%;
+    width: 100%;
+}
+
+.faq_img_outer:hover .common_overlay {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* FAQ CSS End */
+
+
+
+
 
 /* Home Cards CSS Start */
 .home_card {
@@ -1054,390 +1120,8 @@ body .slick-track {
 
 
 
-/* Latest News CSS Start */
-.sub_banner {
-    height: 35.875rem;
-    background-color: rgba(0 0 0/70%);
-    background-blend-mode: multiply;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-.sub_banner_wrap {
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-}
 
-.sub_banner_content h1 {
-    font-size: 3rem;
-    color: #fff;
-    line-height: 1.4;
-    max-width: 40.625rem;
-    letter-spacing: 0.5px;
-}
-
-.news_image_outer {
-    height: 23.75rem;
-    width: 100%;
-    overflow: hidden;
-}
-
-.news_image {
-    height: 100%;
-    width: 100%;
-}
-
-.news-content {
-    padding: 1.25rem 0.625rem;
-}
-
-.news-article {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: 0.3s all ease-in-out;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../images/bg_pattern2.jpg);
-    background-color: rgba(0 0 0/60%);
-    background-blend-mode: multiply;
-}
-
-.news-article:hover {
-    transform: translateY(-5px);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-.news-title {
-    font-size: 1.5rem;
-    line-height: 1.3;
-    color: #ffc723;
-}
-
-.news-desc {
-    color: #FFF;
-    font-size: 1.1rem;
-}
-
-.news-form-info {
-    background: #191919;
-    color: #fff;
-    border-radius: 1.25rem;
-    height: 100%;
-}
-
-.news-form-info h2 {
-    font-size: 2rem;
-    color: #ffc723;
-}
-
-.news-form-info a {
-    color: #ffc723;
-    text-decoration: underline;
-}
-
-.news-form-box form .form-label {
-    font-weight: 500;
-    color: #191919;
-}
-
-.news-form-box form input,
-.news-form-box form textarea {
-    padding: 0.625rem 0;
-    border-color: #a3a3a3;
-    border-radius: 0;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #858585;
-    resize: none;
-    width: 100%;
-}
-
-.news-form-box input,
-.news-form-box textarea,
-.news-form-box select {
-    box-shadow: none !important;
-    outline: none !important;
-}
-
-.news-form-box form input:focus,
-.news-form-box form textarea:focus {
-    box-shadow: none !important;
-    outline: none !important;
-    border-color: #858585;
-}
-
-.news_form_btn {
-    color: #ffc723;
-}
-
-.news-form-box .btn-theme {
-    background: #ffc723;
-    color: #191919;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    padding: 0.75rem 1.5rem;
-    transition: background 0.2s;
-}
-
-.news-form-box .btn-theme:hover {
-    background: #e6b81e;
-    color: #191919;
-}
-
-.news-form-info ul li {
-    margin-left: 1rem;
-    list-style-type: disc;
-    font-size: 1.1rem;
-}
-
-.news-form-info ul li::marker {
-    color: #ffc723;
-}
-
-.news-form-box {
-    padding: 1.25rem;
-    background-color: #fff;
-    border-radius: 1.25rem;
-    height: 100%;
-}
-
-/* Latest News CSS End */
-
-
-/* Teams Page CSS Start */
-.after_banner_content {
-    max-width: 81.25rem;
-}
-
-.after_banner_content p {
-    font-size: 1.3rem;
-}
-
-.teams_info p svg {
-    height: 1.5625rem;
-    width: 1.5625rem;
-    fill: #ffc723;
-    display: inline-block;
-    margin-right: 0.3125rem;
-}
-
-.teams_cards {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 1.25rem;
-    border-radius: 1.25rem;
-    overflow: hidden;
-    transition: 1.3s all ease-in-out;
-    background-color: #000000;
-    height: 100%;
-}
-
-.teams_cards_icon_outer {
-    height: 4.375rem;
-    width: 4.375rem;
-}
-
-.teams_sec_wrap>h3 {
-    text-decoration: underline;
-    text-underline-offset: 8px;
-}
-
-.teams_cards_icon {
-    height: 100%;
-}
-
-.teams_info {
-    padding: 1.25rem 0 0 0;
-}
-
-.teams_info h3 {
-    font-size: 1.6rem;
-}
-
-.teams_cards.light {
-    background: #fff;
-}
-
-.teams_cards.light .teams_info p svg {
-    fill: #000;
-}
-
-.bg_pattern1 {
-    background-image: url(../images/bg_pattern.jpg);
-    background-blend-mode: multiply;
-    background-color: rgba(0 0 0/80%);
-}
-
-.teams_info p {
-    font-weight: 500;
-}
-
-/* Teams Page CSS End */
-
-
-/* Events CSS Start */
-.events_outer_image {
-    position: relative;
-    width: 100%;
-    /* padding-top: 50.66%; */
-    height: 100%;
-}
-
-.events_desc {
-    font-size: 1.1rem;
-}
-
-.events_outer_image::before {
-    content: "";
-    position: absolute;
-    bottom: 12px;
-    right: 12px;
-    width: 100%;
-    height: 100%;
-    background-color: #ffc723;
-    z-index: 0;
-    border-radius: 4px;
-}
-
-.events_image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-    border-radius: 4px;
-}
-
-.events_cards_content {
-    padding: 4rem 1.25rem;
-}
-
-/* Events CSS End */
-
-/* Guides CSS Start */
-.guides_cards {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    background: #000;
-}
-
-.guides_image_outer {
-    overflow: hidden;
-    height: 20rem;
-    width: 100%;
-    position: relative;
-    z-index: 2;
-    flex-shrink: 0;
-}
-
-
-.guides_image {
-    height: 100%;
-    width: 100%;
-    display: block;
-}
-
-.guides_content {
-    padding: 1.5rem 0.3125rem 1.5rem 0.3125rem;
-    position: relative;
-    z-index: 2;
-    background: transparent;
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.guides_content h5 {
-    color: #fff;
-    position: relative;
-    font-size: 1.2rem;
-    font-weight: 600;
-    z-index: 2;
-    line-height: 1.3;
-}
-
-.guides_cards:hover .guides_content h5 {
-    color: #000;
-}
-
-.guides_content::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 0.625rem;
-    width: 100%;
-    background-color: #ffc723;
-    transition: all 0.3s linear;
-    z-index: 1;
-    pointer-events: none;
-}
-
-.guides_cards:hover .guides_content::before {
-    height: 100%;
-}
-
-.guides_image_outer,
-.guides_image {
-    z-index: 2;
-}
-
-.guides_content {
-    z-index: 2;
-    position: relative;
-}
-
-.guides_content::before {
-    z-index: 1;
-}
-
-/* Guides CSS End */
-
-/* Guides Description  CSS Start */
-.inner_pages_banner {
-    height: 34.375rem;
-    width: 100%;
-}
-
-.guides_desc_img {
-    height: 28.125rem;
-    width: 100%;
-}
-
-.guides_desc_boxes {
-    border-bottom: 1px dotted #b1b1b1;
-    padding: 1.25rem;
-}
-
-.guides_desc_boxes ul li {
-    list-style-type: disc;
-    margin-left: 1.25rem;
-}
-
-.fantasy_links {
-    color: #191919;
-    font-weight: 400;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-}
-
-/* Guides Description  CSS End*/
 
 /* About Page CSS Start */
 .home_plan_img_outer {
