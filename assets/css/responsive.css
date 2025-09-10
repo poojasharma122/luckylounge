@@ -5,9 +5,15 @@
 
 
 @media screen and (max-width:1199px) {
-
-
-
+    .footer-top h4 {
+        font-size: 1.4rem;
+    }
+    .footer-top h5 {
+        font-size: 1.1rem;
+    }
+    .sidebar ul li a {
+        font-size: 1.2rem;
+    }
 }
 
 
@@ -17,12 +23,15 @@
     }
     .footer-links,
     .footer-contact {
-        padding-left: 2.75rem;
+        padding-left: 1rem;
     }
 
     .footer-top h5 {
         font-size: 1.1rem;
         line-height: 1.4;
+    }
+    .footer-top h5 {
+        font-size: 1rem;
     }
 
 }
@@ -122,7 +131,9 @@
     .footer-logo a {
         margin-bottom: 0;
     }
-
+    .contact_cards {
+flex-direction: column;
+    }
 
 }
 
