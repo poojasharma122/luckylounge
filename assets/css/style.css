@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: "Oxanium", sans-serif;
+    font-family: "Oxanium", sans-serif;
     padding: 0;
     margin: 0;
     word-break: break-word;
@@ -44,7 +44,7 @@ p {
     line-height: 1.6;
     padding: 0;
     margin: 0;
-  font-family: "Oxanium", sans-serif;
+    font-family: "Oxanium", sans-serif;
     letter-spacing: 1px;
     color: #fff;
 }
@@ -63,17 +63,17 @@ ul li {
 a {
     display: inline-block;
     text-decoration: none;
-  font-family: "Oxanium", sans-serif;
+    font-family: "Oxanium", sans-serif;
 }
 
 button,
 textarea,
 input {
-  font-family: "Oxanium", sans-serif;
+    font-family: "Oxanium", sans-serif;
 }
 
 input {
-  font-family: "Oxanium", sans-serif;
+    font-family: "Oxanium", sans-serif;
 }
 
 img {
@@ -222,11 +222,12 @@ img {
 .bg-0-0 {
     background-position: 0% 0%;
 }
+
 /* Global CSS End */
 
 /* Website Scrollbar CSS  */
 ::-webkit-scrollbar {
-    width: 0.9375rem;
+    width: 0.625rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -239,7 +240,7 @@ img {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background:#fcee0a;
+    background: #fcee0a;
 }
 
 /* Website Scrollbar CSS  */
@@ -418,8 +419,8 @@ span.theme {
 
 
 .sidebar ul li a.active::after {
-    transform: scaleX(0.9);
-    background-color: #fff;
+    transform: scaleX(1);
+    background-color: #fcee0a;
     transform-origin: center;
 }
 
@@ -459,9 +460,11 @@ span.theme {
 .header-bottom {
     display: none;
 }
+
 .header-bottom .header_inner {
     padding: 0.9375rem 1.25rem 1.875rem 1.25rem;
 }
+
 .menu-btn {
     background: none;
     border: none;
@@ -525,39 +528,50 @@ span.theme {
     display: inline-block;
     position: relative;
     text-transform: none;
-  }
+}
 
-  .animated-text span {
+.animated-text span {
     opacity: 0;
     animation: fadeIn 0.6s forwards ease-in;
     color: #fcee0a;
-  }
-  span.animated-text span {
+}
+
+span.animated-text span {
     letter-spacing: -12px;
 }
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 /* Banner CSS Start */
 
 /* Home Slider CSS Start */
-.home_games_slider{
-    width: calc(100% - 120px); 
+.home_games_slider {
+    width: calc(100% - 120px);
     margin: 0 auto;
 }
+
 .slick-list.draggable {
     height: 30.75rem;
 
 }
+
 body .slick-track {
     height: 100%;
 }
+
 .slick-slide {
-    padding: 0 12px;  
+    padding: 0 12px;
     box-sizing: border-box;
-  }
+}
+
 .home_games_slides {
     height: 100%;
     margin: 0 auto;
@@ -587,17 +601,17 @@ body .slick-track {
     opacity: 1;
 }
 
- button.slick-prev {
-    left: -80px ;
+button.slick-prev {
+    left: -80px;
     z-index: 1;
 }
 
- button.slick-next {
-    right: -80px ;
+button.slick-next {
+    right: -80px;
     z-index: 1;
 }
 
- .slick-arrow {
+.slick-arrow {
     width: auto !important;
     height: auto !important;
 }
@@ -615,8 +629,9 @@ body .slick-track {
 .slick-next:hover svg {
     opacity: 1;
     transform: scale(1.05);
-    fill:#fcee0a;
+    fill: #fcee0a;
 }
+
 .game_card {
     position: relative;
     width: 100%;
@@ -627,31 +642,33 @@ body .slick-track {
     background: url('assets/images/card_bg_sample.jpg') center/cover no-repeat;
     border-radius: 1.5rem;
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
     transition: transform 0.3s ease;
-  }
-  
-  .game_card::before {
+}
+
+.game_card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); 
+    background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     transition: opacity 0.3s ease;
-    z-index: 1; /* Behind the button */
-  }
-  .game_card_btn {
+    z-index: 1;
+    /* Behind the button */
+}
+
+.game_card_btn {
     position: absolute;
     left: 50%;
     bottom: 2rem;
     transform: translate(-50%, 40px);
     opacity: 0;
-    transition: 
-      opacity 0.3s cubic-bezier(.77,0,.18,1),
-      transform 0.3s cubic-bezier(.77,0,.18,1);
+    transition:
+        opacity 0.3s cubic-bezier(.77, 0, .18, 1),
+        transform 0.3s cubic-bezier(.77, 0, .18, 1);
     background: #fcee0a;
     color: #000;
     border: none;
@@ -660,19 +677,22 @@ body .slick-track {
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    z-index: 2; /* Above overlay */
-  }
-  .game_card:hover::before,
-  .game_card:focus-within::before {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    z-index: 2;
+    /* Above overlay */
+}
+
+.game_card:hover::before,
+.game_card:focus-within::before {
     opacity: 1;
-  }
-  
-  .game_card:hover .game_card_btn,
-  .game_card:focus-within .game_card_btn {
+}
+
+.game_card:hover .game_card_btn,
+.game_card:focus-within .game_card_btn {
     opacity: 1;
     transform: translate(-50%, 0);
-  }
+}
+
 /* Home Slider CSS End */
 
 
@@ -754,6 +774,7 @@ body .slick-track {
 .common_overlay:hover .box {
     transform: translate(0, 0);
 }
+
 /* Home Cards CSS End */
 
 
@@ -790,51 +811,65 @@ body .slick-track {
     line-height: 1.5;
     color: #fff;
 }
+
 @keyframes bounce-move {
     0% {
         transform: translate(0, 0);
     }
+
     10% {
         transform: translate(-10px, -10px);
     }
+
     20% {
         transform: translate(-15px, 10px);
     }
+
     30% {
         transform: translate(10px, 15px);
     }
+
     40% {
         transform: translate(15px, -10px);
     }
+
     50% {
         transform: translate(0, 0);
     }
+
     60% {
         transform: translate(10px, 10px);
     }
+
     70% {
         transform: translate(-10px, 15px);
     }
+
     80% {
         transform: translate(-15px, -10px);
     }
+
     90% {
         transform: translate(10px, -15px);
     }
+
     100% {
         transform: translate(0, 0);
     }
 }
+
 .bouncing_img {
     animation: bounce-move 10s infinite linear;
-    filter: drop-shadow(0 4px 24px rgba(252,238,10,0.45));
+    filter: drop-shadow(0 4px 24px rgba(252, 238, 10, 0.45));
 }
+
 /* Image Text CSS End */
 
 /* Newsletter CSS Start */
 .newsletter-section .row {
     max-width: 43rem;
 }
+
 .newsletter-section {
     background-color: rgba(0 0 0/80%);
     background-blend-mode: multiply;
@@ -879,7 +914,8 @@ body .slick-track {
 /* Newsletter CSS End */
 
 /* FAQ CSS Start */
-.accordion-button, .accordion-button:not(.collapsed) {
+.accordion-button,
+.accordion-button:not(.collapsed) {
     background: #000;
     color: #fcee0a;
     font-weight: 500;
@@ -890,14 +926,17 @@ body .slick-track {
     box-shadow: none;
     outline: none;
 }
+
 .accordion-item {
     border: none;
     margin-bottom: 0.9375rem;
 }
+
 .accordion-body p {
     color: #151515;
     font-weight: 600;
 }
+
 .accordion-button::after {
     filter: brightness(0) invert(1);
 }
@@ -1111,7 +1150,7 @@ body .slick-track {
 
 .social-icons li a:hover {
     transform: translateY(-4px);
-    border-color:#fcee0a;
+    border-color: #fcee0a;
 }
 
 .footer-top h4 {
@@ -1148,17 +1187,167 @@ body .slick-track {
     max-width: 20.625rem;
     line-height: 1.3;
 }
-.disclaimer{
+
+.disclaimer {
     border-top: 1px solid rgb(252 238 1/50%);
 }
-.disclaimer p a{
+
+.disclaimer p a {
     color: #fcee0a;
 }
-/* footer end  */
+
+/* Footer CSS End  */
+
+/* Games CSS Start */
+.mt-80 {
+    margin-top: 80px
+}
+
+.game-card {
+    position: relative;
+    width: 100%;
+    height: 18.75rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+
+.game-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.game-card .card-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5.5rem;
+    background: rgba(252 238 10/0.3);
+    opacity: 0;
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+    pointer-events: none;
+    height: 100%;
+}
+
+.game-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.game-card .play-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    transform: translate(-50%, -60px) scale(0.8);
+    opacity: 0;
+    transition:
+        opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    z-index: 2;
+}
+
+.game-card:hover .play-btn {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1.08);
+}
+
+.game-card .butn:hover {
+    color: #fff;
+}
+
+/* Games CSS End */
+
+/* About CSS Start */
+.banner_section {
+    background-size: cover;
+    background-position: center;
+    height: 30.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    margin-top: 80px;
+}
+
+.banner_section::before {
+    position: absolute;
+    content: '';
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0 0 0/60%);
+    z-index: -1;
+}
+
+.home_content h2 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.5;
+}
 
 
 
+.home_content {
+    max-width: 80%;
+    margin: 0 auto;
+}
 
+.home_plan_img_outer {
+    height: 3.75rem;
+    width: 100%;
+    margin-bottom: 1.875rem;
+}
+
+.how_we_select_cards_content p svg {
+    height: 1.0625rem;
+    width: 1.0625rem;
+    fill: #4c4c4c;
+    margin-top: -4px;
+}
+
+.home_plan_img_outer.icon_img {
+    height: 15.625rem;
+    width: 100%;
+    margin-bottom: 1.875rem;
+}
+
+.home_plan_img {
+    height: 4.75rem;
+    width: 4.75rem;
+}
+
+.about_cards_sec .row {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.home_plan_img.icon_img {
+    height: 100%;
+    width: 100%;
+}
+
+.home_plan_cards {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 1.25rem;
+    height: 100%;
+    transition: 0.2s all ease-in-out;
+}
+
+.home_plan_cards:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* About CSS Start */
 
 
 /* About Page CSS Start */
@@ -1198,16 +1387,76 @@ body .slick-track {
 }
 
 .home_plan_cards {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: #fcee0a 0px 1px 4px;
     padding: 1.25rem;
     height: 100%;
     transition: 0.2s all ease-in-out;
+    border-radius: 1.875rem;
+    background-color: #000;
 }
 
 .home_plan_cards:hover {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: translateY(-5px);
+    box-shadow: #fcee0a 0px 1px 4px;
 }
 
+.after_bnr_sec .col-lg-6:first-child {
+    padding: 0;
+}
+
+.img_part_outer {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    min-height: 25rem;
+}
+
+.img_part {
+    height: 100%;
+    width: 100%;
+}
+
+.text_part {
+    padding: 5rem 1.875rem;
+}
+
+.text_part h3 {
+    color: #fff;
+    line-height: 1.3;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.text_part p {
+    font-size: 1.2rem;
+}
+
+.text_part ul li {
+  margin-left: 1.25rem;
+  list-style-type: disc;
+}
+
+.text_part ul li::marker {
+    color: #fcee0a;
+    font-size: 1.5rem;
+  }
+.text_part p a {
+    color: #b154f0;
+    font-weight: 500;
+}
+
+.after_bnr_wrap .row {
+    background-color: #000;
+    border-left: 5px solid #fcee0a;
+    border-right: 5px solid #fcee0a;
+}
+.about_offer_cards_sec .home_featured_card {
+    background-color: #151515;
+}
+.bg_dark .after_bnr_wrap .row {
+    background-color: #151515;
+}
 /* About Page CSS End */
 
 /* Contact CSS Start */
@@ -1260,7 +1509,7 @@ body .slick-track {
     position: relative;
     z-index: 99;
     padding: 1.875rem;
-    margin-top: -7rem;
+    margin-top: -5rem;
     background-color: #000;
 }
 
@@ -1276,8 +1525,10 @@ body .slick-track {
 .footer-pages-content-grp h3 {
     font-size: 1.5rem;
     margin-bottom: 0.9375rem;
-    color: #ffc723;
+    color:#fcee0a;
     line-height: 1.4;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .footer-pages-content-grp strong {
@@ -1300,11 +1551,11 @@ body .slick-track {
 }
 
 .footer-pages-content-grp ul li::marker {
-    color: #fff;
+    color: #fcee0a;
 }
 
 .footer-pages-content-grp p a {
-    color: #ffc723;
+    color: #fcee0a;
     display: inline;
     transition: 0.4s all ease-in-out;
     text-underline-offset: 4px;
@@ -1325,7 +1576,9 @@ body .slick-track {
 }
 
 .footer-pages-content-grp a {
-    color: #bb9457;
+    color: #fcee0a;
 }
-
+.mr-list {
+    margin-left: 1.25rem;
+}
 /* Footer Pages CSS End*/
