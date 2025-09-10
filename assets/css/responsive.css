@@ -91,6 +91,9 @@
     .footer-top h4 {
         font-size: 1.6rem;
     }
+    .site-footer {
+        padding-bottom: 90px;
+    }
 }
 
 @media screen and (max-width: 767px) {
