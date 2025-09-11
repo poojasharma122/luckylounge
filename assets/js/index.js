@@ -90,3 +90,116 @@ $('.home_games_slider').slick({
 // Slider JS End
 
 
+// Login Form Validation Start
+
+document.getElementById("loginForm").addEventListener("submit", function (e) {
+    let isValid = true;
+
+
+    const email = document.getElementById("email").value.trim();
+    const emailError = document.getElementById("emailError");
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+      emailError.textContent = "Please enter a valid email address.";
+      isValid = false;
+    } else {
+      emailError.textContent = "";
+    }
+
+ 
+    const password = document.getElementById("password").value.trim();
+    const passwordError = document.getElementById("passwordError");
+
+    if (password.length < 6) {
+      passwordError.textContent = "Password must be at least 6 characters.";
+      isValid = false;
+    } else {
+      passwordError.textContent = "";
+    }
+
+
+    if (!isValid) {
+      e.preventDefault();
+    }
+  });
+// Login Form Validation End
+
+
+// Signup Form Validation Start
+document.getElementById("signupForm").addEventListener("submit", function (e) {
+    let isValid = true;
+  
+    // === Name validation ===
+    const name = document.getElementById("name").value.trim();
+    const nameError = document.getElementById("nameError");
+    if (name.length < 2) {
+      nameError.textContent = "Name must be at least 2 characters.";
+      isValid = false;
+    } else {
+      nameError.textContent = "";
+    }
+  
+    // === Username validation ===
+    const username = document.getElementById("username").value.trim();
+    const usernameError = document.getElementById("usernameError");
+    if (username.length < 4 || /\s/.test(username)) {
+      usernameError.textContent = "Username must be at least 4 characters with no spaces.";
+      isValid = false;
+    } else {
+      usernameError.textContent = "";
+    }
+  
+    // === Email validation ===
+    const email = document.getElementById("email").value.trim();
+    const emailError = document.getElementById("emailError");
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,10}(?:\.[a-zA-Z]{2,10})*$/;
+    if (!emailRegex.test(email)) {
+      emailError.textContent = "Enter a valid email (e.g. user@gmail.com, john@company.co.in).";
+      isValid = false;
+    } else {
+      emailError.textContent = "";
+    }
+  
+    // === Phone validation (optional, must start with + and digits only) ===
+    const phone = document.getElementById("phone").value.trim();
+    const phoneError = document.getElementById("phoneError");
+    const phoneRegex = /^\+[0-9]{7,15}$/; // + followed by 7–15 digits total
+    if (phone && !phoneRegex.test(phone)) {
+      phoneError.textContent = "Phone must start with + and contain only digits, total 7–15 digits (e.g. +919876543210).";
+      isValid = false;
+    } else {
+      phoneError.textContent = "";
+    }
+  
+    // === Password validation ===
+    const password = document.getElementById("password").value.trim();
+    const passwordError = document.getElementById("passwordError");
+    const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,20}$/;
+    if (!passwordRegex.test(password)) {
+      passwordError.textContent = "Password must be 6–20 chars, include 1 uppercase, 1 number, and 1 special character.";
+      isValid = false;
+    } else {
+      passwordError.textContent = "";
+    }
+  
+    // === Confirm password ===
+    const confirmPassword = document.getElementById("confirm_password").value.trim();
+    const confirmPasswordError = document.getElementById("confirmPasswordError");
+    if (confirmPassword !== password) {
+      confirmPasswordError.textContent = "Passwords do not match.";
+      isValid = false;
+    } else {
+      confirmPasswordError.textContent = "";
+    }
+  
+    // === Stop form submission if ANY validation fails ===
+    if (!isValid) {
+      e.preventDefault();
+    }
+  });
+// Signup Form Validation End
+
+
+
+
