@@ -1,16 +1,15 @@
-
-@media screen and (max-width:1399px) {
-
-}
+@media screen and (max-width:1399px) {}
 
 
 @media screen and (max-width:1199px) {
     .footer-top h4 {
         font-size: 1.4rem;
     }
+
     .footer-top h5 {
         font-size: 1.1rem;
     }
+
     .sidebar ul li a {
         font-size: 1.2rem;
     }
@@ -21,6 +20,7 @@
     html {
         font-size: 15px;
     }
+
     .footer-links,
     .footer-contact {
         padding-left: 1rem;
@@ -30,6 +30,7 @@
         font-size: 1.1rem;
         line-height: 1.4;
     }
+
     .footer-top h5 {
         font-size: 1rem;
     }
@@ -40,8 +41,9 @@
     .main_content {
         margin-left: 0;
     }
+
     .sidebar {
-        position:fixed;
+        position: fixed;
         top: 0;
         left: auto;
         right: 0;
@@ -52,9 +54,11 @@
         transform: translateX(100%);
         transition: transform 0.3s cubic-bezier(.77, 0, .18, 1);
     }
+
     .sidebar ul {
         text-align: center;
     }
+
     .sidebar.open {
         transform: translateX(0);
         z-index: 999;
@@ -80,6 +84,7 @@
     .menu-btn {
         display: flex;
     }
+
     .footer-logo a {
         width: 13.625rem;
     }
@@ -92,13 +97,16 @@
     .footer-top h4 {
         font-size: 1.6rem;
     }
+
     .site-footer {
         padding-bottom: 90px;
     }
+
     .header-top .header-actions {
         display: none;
     }
-    .header-top  .header_inner {
+
+    .header-top .header_inner {
         justify-content: center;
     }
 }
@@ -107,6 +115,7 @@
     html {
         font-size: 14px;
     }
+
     .footer-top {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -141,10 +150,52 @@
     .footer-logo a {
         margin-bottom: 0;
     }
+
     .contact_cards {
-flex-direction: column;
+        flex-direction: column;
     }
 
+    .slick-arrow {
+        position: static !important;
+        display: inline-block;
+        margin: 0 10px;
+        vertical-align: middle;
+    }
+
+    .home_games_slider {
+        position: relative;
+        padding-bottom: 3.5rem;
+        width: 100%;
+    }
+
+    .home_games_slider .slick-arrow {
+        position: absolute !important;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .home_games_slider .slick-prev {
+        left: 50%;
+        right: auto;
+        bottom: -140px;
+        transform: translateX(-120%);
+    }
+
+    .home_games_slider .slick-next {
+        left: 50%;
+        right: auto;
+        bottom: -140px;
+        transform: translateX(20%);
+    }
+
+    .slick-prev svg,
+    .slick-next svg {
+        width: 4rem;
+        height: 4rem;
+    }
 }
 
 
@@ -169,8 +220,14 @@ flex-direction: column;
         border-top: 1px solid rgb(192 147 66/30%);
         padding-top: 1.25rem;
     }
+
     .newsletter-wrap p {
         font-size: 1.1rem;
+    }
+    .slick-prev svg,
+    .slick-next svg {
+        width: 3rem;
+        height: 3rem;
     }
 }
 
