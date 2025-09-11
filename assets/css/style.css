@@ -492,6 +492,8 @@ span.theme {
 /* Header CSS End */
 
 /* Banner CSS Start */
+
+
 .banner {
     height: 50rem;
     background-color: rgba(0 0 0/60%);
@@ -506,8 +508,14 @@ span.theme {
     display: flex;
     align-items: center;
     padding-left: 4rem;
+    justify-content: center;
+    text-align: center;
 }
-
+.banner_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .banner_content h1 {
     font-size: 3.5rem;
     color: #fff;
@@ -517,6 +525,7 @@ span.theme {
     text-transform: capitalize;
     position: relative;
     font-weight: 600;
+
 }
 
 
@@ -533,26 +542,29 @@ span.theme {
     position: relative;
     text-transform: none;
 }
-
-.animated-text span {
+.banner_content h1.animated-slide-fade {
     opacity: 0;
-    animation: fadeIn 0.6s forwards ease-in;
-    color: #fcee0a;
+    transform: translateY(-40px);
+    animation: slideFadeDown 0.8s ease-out forwards;
 }
-
-span.animated-text span {
-    letter-spacing: -12px;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
+@keyframes slideFadeDown {
     to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
+.banner_content p.animated-slide-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    animation: slideInLeft 0.8s 0.5s ease-out forwards;
+}
+@keyframes slideInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 /* Banner CSS Start */
 
@@ -1212,13 +1224,15 @@ button.slick-next {
     height: 18.75rem;
     border-radius: 1.25rem;
     overflow: hidden;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
     transition: box-shadow 0.3s;
     display: flex;
     align-items: flex-end;
     margin-bottom: 2rem;
+    box-shadow: rgb(252 238 10/0.5) 0px 3px 8px;
 }
 
 .game-card:hover {
@@ -1231,7 +1245,7 @@ button.slick-next {
     right: 0;
     bottom: 0;
     height: 5.5rem;
-    background: rgba(252 238 10/0.3);
+    background: rgba(0 0 0/0.5);
     opacity: 0;
     transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 1;
@@ -1689,6 +1703,11 @@ button.slick-next {
 /* Games Iframe CSS Start */
 .games_frame_sec{
     margin-top: 5rem;
+
+}
+.games_frame{
+    padding: 1.25rem;
+    border-radius: 1.875rem;
 }
 
 .games_frame iframe {
@@ -1697,3 +1716,5 @@ button.slick-next {
 }
 
 /* Games Iframe CSS End */
+
+
