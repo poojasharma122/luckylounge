@@ -1659,7 +1659,7 @@ button.slick-next {
 
 /* Modal CSS Start */
 .modal-content {
-    background: #262626;
+    background: #000;
     padding: 1.25rem;
     border: 3px solid #fcee0a;
     border-radius: 1.875rem 0;
