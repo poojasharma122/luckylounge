@@ -252,6 +252,7 @@ img {
     letter-spacing: 0.3px;
     text-transform: uppercase;
     font-weight: 500;
+    line-height: 1.4;
 }
 
 span.theme {
