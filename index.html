@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <title>LuckyLounge</title>
+    <title>Lucky Lounge</title>
 
 </head>
 
@@ -22,11 +22,11 @@
         <div class="container-fluid">
             <div class="header_inner">
                 <div class="logo">
-                   <a href="./"></a>
+                    <a href="./"></a>
                 </div>
                 <div class="header-actions">
-                    <a class="butn" id="login_btn">Login</a>
-                    <a class="butn" id="signup_btn">Sign Up</a>
+                    <a class="butn" id="login_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+                    <a class="butn" id="signup_btn"  data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign Up</a>
                 </div>
             </div>
         </div>
@@ -251,11 +251,11 @@
             <div class="container">
                 <div class="image_txt_inner">
                     <div class="row flex-row-reverse align-center">
-                        <div class="col-md-6">                   
+                        <div class="col-md-6">
                             <div class="image_txt_img_outer">
                                 <div class="image_txt_img bg_center_contain bouncing_img"
                                     style="background-image: url(assets/images/home_get_started.png);">
-                                </div>                      
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -264,13 +264,14 @@
                                     <span class="theme">Get Started</span> in Seconds
                                 </h2>
                                 <p>
-                                    Creating your <span class="theme"> Lucky Lounge </span>account takes just moments. Once you’re in, the games, tokens,
-                                    and rewards are ready to go.                                    
+                                    Creating your <span class="theme"> Lucky Lounge </span>account takes just moments.
+                                    Once you’re in, the games, tokens,
+                                    and rewards are ready to go.
                                 </p>
                             </div>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
         </section>
         <!-- Home Get Started Section End -->
@@ -445,7 +446,7 @@
                         </div>
                         <div class="footer-contact">
                             <h4>
-                               Contact Us
+                                Contact Us
                             </h4>
                             <ul>
                                 <li>
@@ -499,7 +500,8 @@
                     </div>
 
                     <div class="footer-bottom">
-                        <p>Copyright © 2025 <a href="./" class="text_theme">luckylounge.games</a> All Rights Reserved.</p>
+                        <p>Copyright © 2025 <a href="./" class="text_theme">luckylounge.games</a> All Rights Reserved.
+                        </p>
                         <div class="ssl_logo">
                             <div class="ssl_logo_inner bg_center_contain"
                                 style="background-image: url(assets/images/ssl.png);">
@@ -513,48 +515,88 @@
 
     </main>
 
-
-        <!-- Contact Modal  Start-->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Book Your Package Here</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Login Modal  Start-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal_logo_outer">
+                    <div class="modal_logo bg_center_contain" style="background-image: url(assets/images/logo.svg);">
                     </div>
-                    <div class="modal-body">
-                        <form class="row newsletter-wrap" id="bookingForm">
-                            <div class="mb-3 col-md-12">
-                                <input type="text" class="custom-input" placeholder="Your Name" required="" id="name">
-                            </div>
-    
-                            <div class="mb-3 col-md-12">
-                                <input type="email" class="custom-input" placeholder="Your Email" required="" id="email">
-                            </div>
-    
-                            <div class="mb-3 col-md-12">
-                                <input type="tel" class="custom-input" placeholder="Your Phone (Optional)" id="phone">
-                            </div>
-    
-                            <div class="mb-3 col-md-12">
-                                <input type="text" class="custom-input" placeholder="Number of Persons" required=""
-                                    id="persons">
-                            </div>
-    
-                            <div class="col-12">
-                                <button type="submit" class="newsletter_btn butn">Submit</button>
-                            </div>
-                            <div class="col-12 mt-3">
-                                <p class="text_theme">
-                                    Our team will contact you within 24 hours of your query.
-                                </p>
-                            </div>
-                        </form>
-                    </div>
+                </div>
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row newsletter-wrap" id="bookingForm">
+                        <div class="mb-3 col-md-12">
+                            <input type="email" class="custom-input" placeholder="Enter Your Email" required id="email">
+                        </div>
+                        <div class="mb-3 col-md-12">
+                            <input type="password" class="custom-input" placeholder="Enter Your Password" required
+                                id="password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="newsletter_btn butn">Log In</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-        <!-- Contact Modal End -->
+    </div>
+    <!-- Login Modal End -->
+
+
+    <!-- Signup Modal  Start-->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal_logo_outer">
+                    <div class="modal_logo bg_center_contain" style="background-image: url(assets/images/logo.svg);">
+                    </div>
+                </div>
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row newsletter-wrap" id="bookingForm">
+                        <div class="mb-3 col-md-12">
+                            <input type="text" class="custom-input" placeholder="Your Name" required id="name">
+                        </div>
+                        <div class="mb-3 col-md-12">
+                            <input type="text" class="custom-input" placeholder="Choose a Username" required
+                                id="username">
+                        </div>
+
+                        <div class="mb-3 col-md-12">
+                            <input type="email" class="custom-input" placeholder="Your Email" required id="email">
+                        </div>
+
+                        <div class="mb-3 col-md-12">
+                            <input type="tel" class="custom-input" placeholder="Your Phone (Optional)" id="phone">
+                        </div>
+
+                        <div class="mb-3 col-md-12">
+                            <input type="password" class="custom-input" placeholder="Your Password" required
+                                id="password">
+                        </div>
+
+                        <div class="mb-3 col-md-12">
+                            <input type="password" class="custom-input" placeholder="Re-enter Your Password" required
+                                id="confirm_password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="newsletter_btn butn">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Signup Modal End -->
+
+
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/slick.js"></script>
