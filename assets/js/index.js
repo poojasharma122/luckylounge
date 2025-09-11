@@ -96,7 +96,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     let isValid = true;
 
 
-    const email = document.getElementById("email").value.trim();
+    const email = document.getElementById("login_email").value.trim();
     const emailError = document.getElementById("emailError");
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -108,7 +108,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     }
 
  
-    const password = document.getElementById("password").value.trim();
+    const password = document.getElementById("login_password").value.trim();
     const passwordError = document.getElementById("passwordError");
 
     if (password.length < 6) {
@@ -131,7 +131,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
     let isValid = true;
   
     // === Name validation ===
-    const name = document.getElementById("name").value.trim();
+    const name = document.getElementById("signup_name").value.trim();
     const nameError = document.getElementById("nameError");
     if (name.length < 3) {
       nameError.textContent = "Name must be at least 3 characters.";
@@ -141,7 +141,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
     }
   
     // === Username validation ===
-    const username = document.getElementById("username").value.trim();
+    const username = document.getElementById("signup_username").value.trim();
     const usernameError = document.getElementById("usernameError");
     if (username.length < 4 || /\s/.test(username)) {
       usernameError.textContent = "Username must be at least 4 characters with no spaces.";
@@ -151,7 +151,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
     }
   
     // === Email validation ===
-    const email = document.getElementById("email").value.trim();
+    const email = document.getElementById("signup_email").value.trim();
     const emailError = document.getElementById("emailError");
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,10}(?:\.[a-zA-Z]{2,10})*$/;
     if (!emailRegex.test(email)) {
@@ -162,7 +162,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
     }
   
     // === Phone validation (optional, must start with + and digits only) ===
-    const phone = document.getElementById("phone").value.trim();
+    const phone = document.getElementById("signup_phone").value.trim();
     const phoneError = document.getElementById("phoneError");
     const phoneRegex = /^\+[0-9]{7,15}$/; // + followed by 7–15 digits total
     if (phone && !phoneRegex.test(phone)) {
@@ -173,7 +173,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
     }
   
     // === Password validation ===
-    const password = document.getElementById("password").value.trim();
+    const password = document.getElementById("signup_password").value.trim();
     const passwordError = document.getElementById("passwordError");
     const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,20}$/;
     if (!passwordRegex.test(password)) {
@@ -184,7 +184,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
     }
   
     // === Confirm password ===
-    const confirmPassword = document.getElementById("confirm_password").value.trim();
+    const confirmPassword = document.getElementById("signup_confirm_password").value.trim();
     const confirmPasswordError = document.getElementById("confirmPasswordError");
     if (confirmPassword !== password) {
       confirmPasswordError.textContent = "Passwords do not match.";

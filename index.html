@@ -26,7 +26,8 @@
                 </div>
                 <div class="header-actions">
                     <a class="butn" id="login_btn_top" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
-                    <a class="butn" id="signup_btn_top" data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign Up</a>
+                    <a class="butn" id="signup_btn_top" data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign
+                        Up</a>
                 </div>
             </div>
         </div>
@@ -66,10 +67,7 @@
         <!-- Banner Section Start -->
         <section class="banner" style="background-image: url('assets/images/home_banner.png');">
             <div class="banner_wrap">
-                <div class="banner_content">
-                    <style>
-
-                    </style>
+                <div class="banner_content">                    
                     <h1 class="animated-slide-fade">
                         Welcome to <span class="theme">Lucky Lounge</span>
                     </h1>
@@ -442,10 +440,12 @@
                             <h4>
                                 Contact Us
                             </h4>
-                           <li>
+                            <ul>
+                                <li>
                                     <a href="mailto:contact@luckylounge.games"
                                         class="text_white footer_cont_mail">contact@luckylounge.games</a>
                                 </li>
+                            </ul>                           
                             <div class="social-icons mt-4">
                                 <ul>
                                     <li><a href="https://www.instagram.com/" target="_blank"><svg
@@ -524,11 +524,11 @@
                 <div class="modal-body">
                     <form class="row newsletter-wrap" id="loginForm">
                         <div class="mb-3 col-md-12">
-                            <input type="email" class="custom-input" placeholder="Enter Your Email" required id="email">
+                            <input type="email" class="custom-input" placeholder="Enter Your Email" required id="login_email">
                         </div>
                         <div class="mb-3 col-md-12">
                             <input type="password" class="custom-input" placeholder="Enter Your Password" required
-                                id="password">
+                                id="login_password">
                         </div>
                         <div class="col-12">
                             <button type="submit" class="newsletter_btn butn">Log In</button>
@@ -556,29 +556,29 @@
                 <div class="modal-body">
                     <form class="row newsletter-wrap" id="signupForm">
                         <div class="mb-3 col-md-12">
-                            <input type="text" class="custom-input" placeholder="Your Name" required id="name">
+                            <input type="text" class="custom-input" placeholder="Your Name" required id="signup_name">
                         </div>
                         <div class="mb-3 col-md-12">
                             <input type="text" class="custom-input" placeholder="Choose a Username" required
-                                id="username">
+                                id="signup_username">
                         </div>
 
                         <div class="mb-3 col-md-12">
-                            <input type="email" class="custom-input" placeholder="Your Email" required id="email">
+                            <input type="email" class="custom-input" placeholder="Your Email" required id="signup_email">
                         </div>
 
                         <div class="mb-3 col-md-12">
-                            <input type="tel" class="custom-input" placeholder="Your Phone (Optional)" id="phone">
+                            <input type="tel" class="custom-input" placeholder="Your Phone (Optional)" id="signup_phone">
                         </div>
 
                         <div class="mb-3 col-md-12">
                             <input type="password" class="custom-input" placeholder="Your Password" required
-                                id="password">
+                                id="signup_password">
                         </div>
 
                         <div class="mb-3 col-md-12">
                             <input type="password" class="custom-input" placeholder="Re-enter Your Password" required
-                                id="confirm_password">
+                                id="signup_confirm_password">
                         </div>
                         <div class="col-12">
                             <button type="submit" class="newsletter_btn butn">Sign Up</button>
