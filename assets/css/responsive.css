@@ -94,6 +94,12 @@
     .site-footer {
         padding-bottom: 90px;
     }
+    .header-top .header-actions {
+        display: none;
+    }
+    .header-top  .header_inner {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 767px) {

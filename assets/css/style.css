@@ -1648,6 +1648,8 @@ button.slick-next {
     border-bottom: 3px solid #fcee0a !important;
     padding: 1.25rem 0;
     justify-content: center;
+    border-top: 3px solid #fcee0a;
+    border-radius: 0;
 }
 
 .modal-content form.newsletter-wrap {
