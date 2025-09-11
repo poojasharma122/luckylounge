@@ -94,7 +94,7 @@
                             </h3>
                             <p>
                                 Reach us anytime at <a href="mailto:contact@luckylounge.games"
-                                    class="text_theme">contact@luckylounge.games.</a> We aim to respond to all
+                                    class="text_theme anchor_hover">contact@luckylounge.games.</a> We aim to respond to all
                                 inquiries as quickly as possible.
                             </p>
                         </div>
@@ -148,19 +148,23 @@
                         Sign up for our newsletter to receive the latest updates, new game releases, and exclusive
                         promotions directly in your inbox.
                     </p>
-                    <div class="row ">
-                        <div class="col-md-6 col-12">
-                            <input type="text" class="name" placeholder="Your Name" required="">
+                    <form id="newsletterForm" novalidate>
+                        <div class="row">
+                          <div class="col-md-6 col-12">
+                            <input type="text" class="form-control name" placeholder="Your Name" required>
+                            <small class="text-danger d-none" id="nameError">Please enter your name.</small>
+                          </div>
+                      
+                          <div class="col-md-6 col-12">
+                            <input type="email" class="form-control email" placeholder="Your Email" required>
+                            <small class="text-danger d-none" id="emailError">Please enter a valid email address.</small>
+                          </div>
+                      
+                          <div class="col-12 pt-5">
+                            <button type="submit" class="newsletter-btn butn">Sign Up</button>
+                          </div>
                         </div>
-                        <div class="col-md-6 col-12">
-                            <input type="email" class="email" placeholder="Your Email" required="">
-                        </div>
-                        <div class="col-12 pt-5">
-                            <a href="javascript:void(0)" class="newsletter-btn butn">
-                                Sign Up
-                            </a>
-                        </div>
-                    </div>
+                      </form>
                 </div>
             </div>
         </section>
@@ -193,12 +197,10 @@
                              <h4>
                                Contact Us
                             </h4>
-                            <ul>
-                                <li>
+                           <li>
                                     <a href="mailto:contact@luckylounge.games"
-                                        class="text_white">contact@luckylounge.games</a>
+                                        class="text_white footer_cont_mail">contact@luckylounge.games</a>
                                 </li>
-                            </ul>
                             <div class="social-icons mt-4">
                                 <ul>
                                     <li><a href="https://www.instagram.com/" target="_blank"><svg
@@ -236,8 +238,10 @@
                             region.
                             Participation is for entertainment purposes only and should not be viewed as gambling. By
                             using
-                            <span class="theme">Lucky Lounge</span>, you agree to our <a href="terms-conditions"> Terms
-                                of Service</a> and <a href="privacy-policy">Privacy Policy.</a> If gaming ever feels
+                            <span class="theme">Lucky Lounge</span>, you agree to our <a href="terms-conditions"
+                                class="anchor_hover"> Terms
+                                of Service</a> and <a href="privacy-policy" class="anchor_hover">Privacy Policy.</a> If
+                            gaming ever feels
                             difficult to manage, we encourage you to seek guidance from responsible play organizations
                             in
                             your area.
@@ -245,7 +249,8 @@
                     </div>
 
                     <div class="footer-bottom">
-                       <p>Copyright © 2025 <a href="./" class="text_theme">luckylounge.games</a> All Rights Reserved.</p>
+                       <p>Copyright © 2025 <a href="./" class="text_theme anchor_hover">luckylounge.games</a> All
+                            Rights Reserved. </p>
                         <div class="ssl_logo">
                             <div class="ssl_logo_inner bg_center_contain"
                                 style="background-image: url(assets/images/ssl.png);">

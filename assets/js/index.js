@@ -133,8 +133,8 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
     // === Name validation ===
     const name = document.getElementById("name").value.trim();
     const nameError = document.getElementById("nameError");
-    if (name.length < 2) {
-      nameError.textContent = "Name must be at least 2 characters.";
+    if (name.length < 3) {
+      nameError.textContent = "Name must be at least 3 characters.";
       isValid = false;
     } else {
       nameError.textContent = "";
@@ -200,6 +200,51 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
   });
 // Signup Form Validation End
 
+// Newsletter Validation Start
+document.getElementById("newsletterForm").addEventListener("submit", function (e) {
+  e.preventDefault(); // stop page refresh
+
+  let isValid = true;
+
+  const nameInput = document.querySelector(".name");
+  const nameError = document.getElementById("nameError");
+  if (nameInput.value.trim() === "") {
+    nameError.classList.remove("d-none");
+    isValid = false;
+  } else {
+    nameError.classList.add("d-none");
+  }
+
+  const emailInput = document.querySelector(".email");
+  const emailError = document.getElementById("emailError");
+  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/i;
+  if (!emailPattern.test(emailInput.value.trim())) {
+    emailError.classList.remove("d-none");
+    isValid = false;
+  } else {
+    emailError.classList.add("d-none");
+  }
+
+  if (isValid) {
+    // clear form fields
+    this.reset();
+
+    // show success message
+    let msg = document.getElementById("successMsg");
+    if (!msg) {
+      msg = document.createElement("p");
+      msg.id = "successMsg";
+      msg.className = "text-success mt-3";
+      this.appendChild(msg);
+    }
+    msg.textContent = "Thank you for signing up!";
+
+    // remove message after 3 seconds
+    setTimeout(() => {
+      msg.textContent = "";
+    }, 5000);
+  }
+});
 
 
-
+// Newsletter Validation End
