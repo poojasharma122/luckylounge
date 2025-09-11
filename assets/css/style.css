@@ -1708,7 +1708,7 @@ button.slick-next {
 .games_frame {
     padding: 1.25rem;
     border-radius: 1.875rem;
-    max-width: 75rem;
+    max-width: 63rem;
     height: 37.5rem;
     margin: 0 auto;
 }
@@ -1718,7 +1718,9 @@ button.slick-next {
     height: 100%;
     object-fit: cover;
 }
-
+.games_sec_wrap {
+    max-width: 75rem;
+}
 /* Games Iframe CSS End */
 
 
