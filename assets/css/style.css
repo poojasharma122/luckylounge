@@ -645,7 +645,7 @@ button.slick-next {
     justify-content: center;
     border-radius: 1.5rem;
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 8px 15px rgba(252 238 10/0.18);
     transition: transform 0.3s ease;
 }
 
