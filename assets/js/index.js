@@ -234,12 +234,12 @@ document.getElementById("newsletterForm").addEventListener("submit", function (e
       msg.className = "text-success mt-3";
       this.appendChild(msg);
     }
-    msg.textContent = "Thank you for signing up!";
+    msg.textContent = "Your have been subscribed to our newsletter!";
 
 
-    // setTimeout(() => {
-    //   msg.textContent = "";
-    // }, 5000);
+    setTimeout(() => {
+      msg.textContent = "";
+    }, 5000);
   }
 });
 
