@@ -426,4 +426,7 @@
     .games_frame {
             height: 30.5rem;
     }
+    .footer-pages-content-grp strong {
+        font-size: 1rem;
+    }
 }
