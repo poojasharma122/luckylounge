@@ -1,4 +1,8 @@
-@media screen and (max-width:1399px) {}
+@media screen and (max-width:1399px) {
+    .home_featured_img_outer {
+        height: 18rem;
+    }
+}
 
 
 @media screen and (max-width:1199px) {
@@ -318,10 +322,6 @@
 
     .pt-7 {
         padding-top: 3.375rem;
-    }
-
-    .home_featured_img_outer {
-        height: 20rem;
     }
 
     .py-5 {
