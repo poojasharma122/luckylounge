@@ -64,7 +64,7 @@ $('.home_games_slider').slick({
     slidesToScroll: 1, 
     responsive: [
         {
-            breakpoint: 991,
+            breakpoint: 1199,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
