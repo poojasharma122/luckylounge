@@ -402,13 +402,15 @@ span.theme {
     gap: 10px;
 }
 
-.sidebar ul li a  ,.anchor_hover {
+.sidebar ul li a,
+.anchor_hover {
     color: #fcee0a;
     font-size: 1.5rem;
     position: relative;
 }
 
-.sidebar ul li a::after ,.anchor_hover::after {
+.sidebar ul li a::after,
+.anchor_hover::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -424,13 +426,15 @@ span.theme {
 }
 
 
-.sidebar ul li a.active::after ,.anchor_hover.active::after {
+.sidebar ul li a.active::after,
+.anchor_hover.active::after {
     transform: scaleX(1);
     background-color: #fcee0a;
     transform-origin: center;
 }
 
-.sidebar ul li a:hover::after ,.anchor_hover:hover::after {
+.sidebar ul li a:hover::after,
+.anchor_hover:hover::after {
     transform: scaleX(0.9);
 }
 
@@ -619,6 +623,7 @@ body .slick-track {
 .lounge_exp_home {
     overflow: hidden;
 }
+
 .slide_content {
     text-align: center;
     padding: 0 0.9375rem;
@@ -957,9 +962,11 @@ button.slick-next {
     font-weight: 500;
     font-size: 1.5rem;
 }
+
 .accordion-body p {
     text-align: left;
 }
+
 .accordion-button:focus {
     box-shadow: none;
     outline: none;
@@ -1229,9 +1236,11 @@ button.slick-next {
 .disclaimer {
     border-top: 1px solid rgb(252 238 1/50%);
 }
+
 .disclaimer p {
     text-align: left;
 }
+
 .disclaimer p a {
     color: #fcee0a;
 }
@@ -1303,15 +1312,18 @@ button.slick-next {
 .game-card .butn:hover {
     color: #fff;
 }
+
 .anchor_hover {
     font-size: inherit;
 }
+
 /* Games CSS End */
 
 /* About CSS Start */
 .banner_section {
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 35.75rem;
     display: flex;
     justify-content: center;
@@ -1320,6 +1332,10 @@ button.slick-next {
     position: relative;
     z-index: 10;
     margin-top: 80px;
+}
+
+.bg_top {
+    background-position: top;
 }
 
 .banner_section::before {
@@ -1390,9 +1406,11 @@ button.slick-next {
 .home_plan_cards:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .home_plan_cards p {
     text-align: left;
 }
+
 /* About CSS Start */
 
 
@@ -1577,9 +1595,11 @@ button.slick-next {
     border-radius: 1.875rem;
     border: 1px solid #fcf00a86;
 }
+
 .contact_card_info p {
     text-align: left;
 }
+
 /* Contact CSS End */
 
 
@@ -1656,14 +1676,17 @@ button.slick-next {
 .footer-pages-content-grp.ft_diff p {
     color: #fff;
 }
+
 .footer-contact li {
     list-style: none;
 }
+
 .footer-pages-content-grp a {
     color: #fcee0a;
 }
+
 .footer_cont_mail:hover {
-    color:#fcee0a;
+    color: #fcee0a;
 }
 
 .mr-list {
