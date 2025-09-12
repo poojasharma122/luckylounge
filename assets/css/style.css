@@ -647,8 +647,8 @@ button.slick-next {
 
 .slick-prev svg,
 .slick-next svg {
-    width: 5rem;
-    height: 5rem;
+    width: 3.5rem;
+    height: 3.5rem;
     fill: #fff;
     opacity: 0.5;
     transition: all 0.3s ease;
@@ -911,6 +911,7 @@ button.slick-next {
     border-bottom: 1px solid #fff;
     padding: 0.6235rem;
     color: #fff;
+    border-radius: 0;
 }
 
 .newsletter-wrap input:focus {
@@ -956,7 +957,9 @@ button.slick-next {
     font-weight: 500;
     font-size: 1.5rem;
 }
-
+.accordion-body p {
+    text-align: left;
+}
 .accordion-button:focus {
     box-shadow: none;
     outline: none;
@@ -1226,7 +1229,9 @@ button.slick-next {
 .disclaimer {
     border-top: 1px solid rgb(252 238 1/50%);
 }
-
+.disclaimer p {
+    text-align: left;
+}
 .disclaimer p a {
     color: #fcee0a;
 }
@@ -1385,7 +1390,9 @@ button.slick-next {
 .home_plan_cards:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
+.home_plan_cards p {
+    text-align: left;
+}
 /* About CSS Start */
 
 
@@ -1469,6 +1476,7 @@ button.slick-next {
 
 .text_part p {
     font-size: 1.2rem;
+    text-align: left;
 }
 
 .text_part ul li {
@@ -1490,6 +1498,8 @@ button.slick-next {
     background-color: #000;
     border-left: 5px solid #fcee0a;
     border-right: 5px solid #fcee0a;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .about_offer_cards_sec .home_featured_card {
@@ -1498,6 +1508,8 @@ button.slick-next {
 
 .bg_dark .after_bnr_wrap .row {
     background-color: #151515;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* About Page CSS End */
@@ -1565,7 +1577,9 @@ button.slick-next {
     border-radius: 1.875rem;
     border: 1px solid #fcf00a86;
 }
-
+.contact_card_info p {
+    text-align: left;
+}
 /* Contact CSS End */
 
 
@@ -1671,7 +1685,7 @@ button.slick-next {
 
 .modal-content .modal-title {
     color: #fcee0a;
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
     font-weight: 600;
 }
 

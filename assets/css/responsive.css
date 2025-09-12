@@ -13,6 +13,13 @@
     .sidebar ul li a {
         font-size: 1.2rem;
     }
+
+    .section_heading {
+        font-size: 2.5rem;
+    }
+    .text_part p {
+        font-size: 1.1rem;
+    }
 }
 
 
@@ -109,8 +116,17 @@
     .header-top .header_inner {
         justify-content: center;
     }
+
     .banner_wrap {
         padding-left: 0;
+    }
+
+    .faq_img_outer {
+        height: 25rem;
+        margin-bottom: 1.25rem;
+    }
+    .text_part {
+        padding: 3rem 0;
     }
 }
 
@@ -146,7 +162,7 @@
 
     .footer-bottom {
         flex-direction: column;
-        gap: 1.25rem;
+        gap: 0.5rem;
         text-align: center;
     }
 
@@ -199,13 +215,47 @@
         width: 4rem;
         height: 4rem;
     }
+
     .banner_content {
         margin-top: 5rem;
         padding: 0 0.9375rem;
     }
+
     .banner_content h1 {
         font-size: 3rem;
         max-width: 20.625rem;
+    }
+
+    .accordion-button,
+    .accordion-button:not(.collapsed) {
+        font-size: 1.4rem;
+    }
+
+    .footer-bottom {
+        padding: 1.3125rem 0 0 0;
+    }
+
+    .banner_content p {
+        font-size: 1.1rem;
+    }
+
+    .banner_section {
+        height: 35.75rem;
+    }
+
+    .home_content h2 {
+        font-size: 2.7rem;
+    }
+
+    .text_part {
+        padding: 3rem 0;
+    }
+
+    .contact_cards {
+        padding: 1.875rem 1.25rem;
+    }
+    .footer-pages-wrap p{
+        text-align: left;
     }
 }
 
@@ -235,25 +285,88 @@
     .newsletter-wrap p {
         font-size: 1.1rem;
     }
+
     .slick-prev svg,
     .slick-next svg {
         width: 3rem;
         height: 3rem;
     }
+
     .banner_content h1 {
         font-size: 2.5rem;
         max-width: 20.625rem;
     }
+
     .banner {
         height: 40rem;
     }
+
     .section_heading {
         font-size: 2.2rem;
         text-align: center;
     }
-    p{
+
+    p {
         text-align: center;
     }
+
+    .pt-7 {
+        padding-top: 3.375rem;
+    }
+
+    .home_featured_img_outer {
+        height: 20rem;
+    }
+
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .image_txt_img_outer {
+        height: 20rem;
+    }
+
+    .py-7 {
+        padding: 3.375rem 0;
+    }
+
+    .footer-top h4 {
+        font-size: 1.4rem;
+    }
+
+    .footer-links li a,
+    .footer-contact li {
+        font-size: 1rem;
+    }
+
+    .banner_section {
+        height: 30.75rem;
+    }
+
+    .home_content h2 {
+        font-size: 2.3rem;
+    }
+
+    .text_part p {
+        font-size: 1rem;
+    }
+    .py-6 {
+        padding: 2.75rem 0px;
+    }
+    .modal-content .modal-title {
+        font-size: 1.6rem !important;
+    }
+    .footer-pages-content-grp h3 {
+        font-size: 1.3rem;
+    }
+    .footer-pages-wrap {
+        padding: 1.875rem  0.9375rem;
+    }
+    .games_frame {
+        padding: 0;
+    }
+
 }
 
 @media screen and (max-width:480px) {
@@ -263,10 +376,42 @@
 
     .banner_content p {
         font-size: 1rem;
-        max-width: 20.625rem;
     }
+
     .section_heading {
         font-size: 1.8rem;
     }
 
+    .home_featured_img_outer {
+        height: 18rem;
+    }
+
+    .accordion-button,
+    .accordion-button:not(.collapsed) {
+        font-size: 1.2rem;
+    }
+
+    .banner_section {
+        height: 25.75rem;
+    }
+
+    .home_content h2 {
+        font-size: 2.1rem;
+    }
+
+    .text_part {
+        padding: 2rem 0;
+    }
+    .contact_group_content h3, .contact_card_info h3 {
+        font-size: 1.3rem;
+    }
+    .footer-pages-content-grp h3 {
+        font-size: 1.2rem;
+    }
+    .footer-pages-content-grp p {
+        font-size: 1rem;
+    }
+    .games_frame {
+        height: 21.5rem;
+    }
 }
