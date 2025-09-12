@@ -505,11 +505,12 @@ span.theme {
 
 .banner {
     height: 50rem;
-    background-color: rgba(0 0 0/60%);
+    background-color: rgba(0 0 0/70%);
     background-blend-mode: multiply;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 .banner_wrap {
@@ -519,6 +520,7 @@ span.theme {
     padding-left: 4rem;
     justify-content: center;
     text-align: center;
+
 }
 
 .banner_content {
@@ -580,7 +582,57 @@ span.theme {
     }
 }
 
+/* .casino_icons {
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    z-index: 0;
+    animation: bounceRandom 8s ease-in-out infinite;
+}
 
+.casino_icons.one {
+    top: 15rem;
+    left: 10rem;
+    animation-delay: 0s;
+}
+
+.casino_icons.two {
+    top: 15rem;
+    right: 10rem;
+    animation-delay: 1s;
+}
+
+.casino_icons.three {
+    bottom: 15rem;
+    left: 15rem;
+    animation-delay: 2s;
+}
+
+.casino_icons.four {
+    bottom: 15rem;
+    height: 7rem;
+    width: 7rem;
+    right: 15rem;
+    animation-delay: 3s;
+}
+
+@keyframes bounceRandom {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(0, -30px);
+    }
+    50% {
+        transform: translate(30px, 0);
+    }
+    75% {
+        transform: translate(0, 30px);
+    }
+    100% {
+        transform: translate(-30px, 0);
+    }
+} */
 /* Banner CSS Start */
 
 /* Home Slider CSS Start */
