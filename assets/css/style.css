@@ -1047,6 +1047,7 @@ button.slick-next {
     width: 100%;
     overflow: hidden;
     position: relative;
+    border-radius: 1.875rem;
 }
 
 .faq_img {
