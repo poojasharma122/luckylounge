@@ -128,6 +128,9 @@
     .text_part {
         padding: 3rem 0;
     }
+.footer_cont_mail {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -257,6 +260,9 @@
     .footer-pages-wrap p{
         text-align: left;
     }
+    .footer_cont_mail {
+        font-size: 1.1rem;
+    }
 }
 
 
@@ -366,7 +372,9 @@
     .games_frame {
         padding: 0;
     }
-
+    .newsletter-wrap p.text-success {
+        text-align: left;
+    }
 }
 
 @media screen and (max-width:480px) {

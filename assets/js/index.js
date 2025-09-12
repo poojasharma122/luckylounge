@@ -130,7 +130,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 document.getElementById("signupForm").addEventListener("submit", function (e) {
     let isValid = true;
   
-    // === Name validation ===
+
     const name = document.getElementById("signup_name").value.trim();
     const nameError = document.getElementById("nameError");
     if (name.length < 3) {
@@ -140,7 +140,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
       nameError.textContent = "";
     }
   
-    // === Username validation ===
+
     const username = document.getElementById("signup_username").value.trim();
     const usernameError = document.getElementById("usernameError");
     if (username.length < 4 || /\s/.test(username)) {
@@ -149,8 +149,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
     } else {
       usernameError.textContent = "";
     }
-  
-    // === Email validation ===
+
     const email = document.getElementById("signup_email").value.trim();
     const emailError = document.getElementById("emailError");
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,10}(?:\.[a-zA-Z]{2,10})*$/;
@@ -161,7 +160,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
       emailError.textContent = "";
     }
   
-    // === Phone validation (optional, must start with + and digits only) ===
+
     const phone = document.getElementById("signup_phone").value.trim();
     const phoneError = document.getElementById("phoneError");
     const phoneRegex = /^\+[0-9]{7,15}$/; // + followed by 7–15 digits total
@@ -172,7 +171,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
       phoneError.textContent = "";
     }
   
-    // === Password validation ===
+
     const password = document.getElementById("signup_password").value.trim();
     const passwordError = document.getElementById("passwordError");
     const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,20}$/;
@@ -183,7 +182,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
       passwordError.textContent = "";
     }
   
-    // === Confirm password ===
+
     const confirmPassword = document.getElementById("signup_confirm_password").value.trim();
     const confirmPasswordError = document.getElementById("confirmPasswordError");
     if (confirmPassword !== password) {
@@ -193,7 +192,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
       confirmPasswordError.textContent = "";
     }
   
-    // === Stop form submission if ANY validation fails ===
+
     if (!isValid) {
       e.preventDefault();
     }
@@ -202,7 +201,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
 
 // Newsletter Validation Start
 document.getElementById("newsletterForm").addEventListener("submit", function (e) {
-  e.preventDefault(); // stop page refresh
+  e.preventDefault(); 
 
   let isValid = true;
 
@@ -226,10 +225,8 @@ document.getElementById("newsletterForm").addEventListener("submit", function (e
   }
 
   if (isValid) {
-    // clear form fields
     this.reset();
 
-    // show success message
     let msg = document.getElementById("successMsg");
     if (!msg) {
       msg = document.createElement("p");
@@ -239,10 +236,10 @@ document.getElementById("newsletterForm").addEventListener("submit", function (e
     }
     msg.textContent = "Thank you for signing up!";
 
-    // remove message after 3 seconds
-    setTimeout(() => {
-      msg.textContent = "";
-    }, 5000);
+
+    // setTimeout(() => {
+    //   msg.textContent = "";
+    // }, 5000);
   }
 });
 
